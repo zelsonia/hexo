@@ -3,11 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
+title: 东篱把酒黄昏后。
+subtitle: 有暗香盈袖
+description: 通关大逆2! 开心
+author: Zelsonia
+#simple chinese
+language: zh-Hans
 timezone:
 
 # URL
@@ -76,8 +77,8 @@ theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repository:
-      github: git@github.com:zelsonia/zelsonia.github.io.git
-  branch: master		
+# deploy:
+#   type: git
+#   repository:
+#       github: git@github.com:zelsonia/zelsonia.github.io.git
+#   branch: master		
