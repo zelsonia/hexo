@@ -6,6 +6,8 @@ branches:
   - dev
 before_install:
 - export TZ='Asia/Shanghai'
+# ERROR Deployer not found: git 所以要加上
+npm install --save hexo-deployer-git
 # 解密id_rsa_blog.enc 输出到.ssh/文件夹下，命名为id_rsa
 - openssl aes-256-cbc -K $encrypted_b9019d7122e3_key -iv $encrypted_b9019d7122e3_iv -in .travis/id_rsa.enc -out ~/.ssh/id_rsa -d
 # 设置id_rsa文件权限
