@@ -24,5 +24,6 @@ install:
 script:
 - hexo clean
 - hexo g
+
 after_success:
 - hexo deploy
