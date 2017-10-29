@@ -21,6 +21,7 @@ install:
 - npm install
 # ERROR Deployer not found: git 所以要加上
 - npm install --save hexo-deployer-git
+- npm install --save hexo-util
 script:
 - hexo clean
 - hexo g
