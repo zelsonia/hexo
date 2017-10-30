@@ -4,6 +4,11 @@ node_js:
 branches:
   only:
   - dev
+
+# 要deploy到coding
+addons:
+  ssh_known_hosts: git.coding.net
+
 before_install:
 - export TZ='Asia/Shanghai'
 # 解密id_rsa_blog.enc 输出到.ssh/文件夹下，命名为id_rsa
@@ -25,8 +30,6 @@ install:
 script:
 - hexo clean
 - hexo g
-# 希望能不出现确认The authenticity of host
-- service sshd restart 
 
 after_success:
 - hexo deploy
