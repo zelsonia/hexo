@@ -25,6 +25,8 @@ install:
 script:
 - hexo clean
 - hexo g
+# 希望能不出现确认The authenticity of host
+- service sshd restart 
 
 after_success:
 - hexo deploy
